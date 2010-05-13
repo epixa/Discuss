@@ -2,4 +2,4 @@
 
 require 'production.php';
 
-$config['db']['dbname'] = 'fdassault_staging';
+$config['db']['dbname'] = 'discussdb_staging';

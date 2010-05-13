@@ -1,0 +1,6 @@
+[submodule "vendors/Doctrine2"]
+	path = vendors/Doctrine2
+	url = http://github.com/doctrine/doctrine2.git
+[submodule "vendors/Zend"]
+	path = vendors/Zend
+	url = https://epixa@github.com/epixa/Zend-Framework-v1-Mirror.git
