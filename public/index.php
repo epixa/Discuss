@@ -33,12 +33,15 @@ set_include_path(implode(PATH_SEPARATOR, array(
         'Zend',
         'library'
     ))),
-    get_include_path(),
+    get_include_path()
 )));
 
-require 'Epixa/Application.php';
+require_once 'Zend/Loader/Autoloader.php';
+Zend_Loader_Autoloader::getInstance()
+    ->registerNamespace('Epixa\\')
+    ->registerNamespace('Zend_');
+
 $application = new Epixa\Application(
     APPLICATION_ENV
 );
-
 $application->bootstrap()->run();
