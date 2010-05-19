@@ -24,6 +24,8 @@ return array(
         'frontController' => array(
             'moduleDirectory' => APPLICATION_PATH,
             'env' => APPLICATION_ENV
-        )
+        ),
+        'modules' => array(),
+        'view' => array()
     )
 );

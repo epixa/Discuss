@@ -23,6 +23,7 @@ if (!defined('APPLICATION_ENV')) {
 }
 
 set_include_path(implode(PATH_SEPARATOR, array(
+    APPLICATION_PATH,
     realpath(implode(DIRECTORY_SEPARATOR, array(
         APPLICATION_ROOT,
         'library'
@@ -33,6 +34,12 @@ set_include_path(implode(PATH_SEPARATOR, array(
         'Zend',
         'library'
     ))),
+    realpath(implode(DIRECTORY_SEPARATOR, array(
+        APPLICATION_ROOT,
+        'vendor',
+        'Doctrine2',
+        'lib'
+    ))),
     get_include_path()
 )));
 
@@ -41,7 +48,5 @@ Zend_Loader_Autoloader::getInstance()
     ->registerNamespace('Epixa\\')
     ->registerNamespace('Zend_');
 
-$application = new Epixa\Application(
-    APPLICATION_ENV
-);
+$application = new Epixa\Application(APPLICATION_ENV);
 $application->bootstrap()->run();

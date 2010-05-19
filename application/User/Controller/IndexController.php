@@ -1,22 +1,22 @@
 <?php
 /**
- * Forbidden Donut
+ * Epixa - Discuss
  */
 
-namespace Core\Controller;
+namespace User\Controller;
 
 /**
  * Default controller
  *
  * @category   Module
- * @package    Core
+ * @package    User
  * @subpackage Controller
  * @copyright  2010 epixa.com - Court Ewing
  */
-class DefaultController extends \Zend_Controller_Action
+class IndexController extends \Zend_Controller_Action
 {
     public function indexAction()
     {
-        die('Core\Controller\DefaultController::indexAction()');
+        die('<p>User\Controller\IndexController::indexAction()</p>');
     }
 }

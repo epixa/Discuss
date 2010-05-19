@@ -11,7 +11,5 @@
  * @license   http://github.com/epixa/Discuss/blob/master/LICENSE New BSD
  * @author    Court Ewing (court@epixa.com)
  */
-class Bootstrap extends \Zend_Application_Bootstrap_Bootstrap
-{
-    
-}
+class Bootstrap extends \Epixa\Application\Bootstrap
+{}
