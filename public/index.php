@@ -26,10 +26,6 @@ set_include_path(implode(PATH_SEPARATOR, array(
     APPLICATION_PATH,
     realpath(implode(DIRECTORY_SEPARATOR, array(
         APPLICATION_ROOT,
-        'library'
-    ))),
-    realpath(implode(DIRECTORY_SEPARATOR, array(
-        APPLICATION_ROOT,
         'vendor',
         'Epixa',
         'library'
