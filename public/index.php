@@ -31,6 +31,12 @@ set_include_path(implode(PATH_SEPARATOR, array(
     realpath(implode(DIRECTORY_SEPARATOR, array(
         APPLICATION_ROOT,
         'vendor',
+        'Epixa',
+        'library'
+    ))),
+    realpath(implode(DIRECTORY_SEPARATOR, array(
+        APPLICATION_ROOT,
+        'vendor',
         'Zend',
         'library'
     ))),
